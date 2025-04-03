@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" id="gameContainer">
+        <h2>🎯 Adivina el número (1 al 10)</h2>
+        <input type="number" id="numero" min="1" max="20" required>
+        <br>
+        <button onclick="verificarNumero()">Probar suerte</button>
+        <p class="mensaje" id="mensaje"></p>
+        <p class="intentos">Intentos: <span id="contadorIntentos">0</span></p>
+    </div>
+
+    <div class="error-container" id="errorMessage">
+        <div id="notfound">
+            <div class="notfound">
+                <div class="notfound-404">
+                    <h1>Oops!</h1>
+                    <br><br><br>
+                    <h2>404 - El servidor no funciona</h2>
+                </div>
+                <a href="#">Intentos realizados: <span id="contadorFinalIntentos">0</span></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
