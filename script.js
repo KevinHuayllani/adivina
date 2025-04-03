@@ -1,5 +1,5 @@
 // Variables globales
-let numeroAleatorio = Math.floor(Math.random() * 3) + 1;
+let numeroAleatorio = Math.floor(Math.random() * 10) + 1;
 let intentos = parseInt(localStorage.getItem("intentos")) || 0;
 let juegoTerminado = localStorage.getItem("juegoTerminado") === "true";
 
@@ -20,7 +20,7 @@ function verificarNumero() {
 
     // Validación de entrada
     if (numeroUsuario < 1 || numeroUsuario > 10 || isNaN(numeroUsuario)) {
-        mensaje.innerHTML = `⚠️ Ingresa un número válido entre 1 y 20.`;
+        mensaje.innerHTML = `⚠️ Ingresa un número válido entre 1 y 10.`;
         return;
     }
 
